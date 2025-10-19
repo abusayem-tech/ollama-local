@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ollama-gui"
+version = "0.1.0"
+description = "Simple Windows GUI for Ollama: list, pull, delete, chat"
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt6>=6.7.0",
+    "requests>=2.32.3",
+]
+
+[project.scripts]
+ollama-gui = "app.main:run"
+
+
